@@ -1,0 +1,17 @@
+### Authentication details
+export TF_VAR_tenancy_ocid="ocid1.tenancy.oc1..aaaaaaaajehugl3ryss2gaxf3os7g5w4xdztfhy4coqnoizm2wpmrclnv5da"
+export TF_VAR_user_ocid="ocid1.user.oc1..aaaaaaaazupdztgd245ytaevktf6chnkw3iggbjbvashykxllojjlwcdeqeq"
+export TF_VAR_fingerprint="0e:b4:76:20:c4:eb:4f:f4:e0:e6:25:68:b6:94:7e:62"
+export TF_VAR_private_key_path="..\stage_and_monitor_instance\userdata\oci_api_key.pem"
+
+### Region
+export TF_VAR_region="us-ashburn-1"
+
+### Compartment
+export TF_VAR_compartment_ocid="ocid1.compartment.oc1..aaaaaaaaqrzcrf2nlvmjfgs5nbnawh6ps5yorduy2a6jhe2rwck2ws2oz3pa"
+
+### Public/private keys used on the instance
+export TF_VAR_ssh_public_key=$(cat ..\stage_and_monitor_instance\userdata\omc_ssh.pub)
+export TF_VAR_ssh_private_key=$(cat ..\stage_and_monitor_instance\userdata\omc_ssh.pem)
+## NOTE: These are not your api keys. More info on the right keys see
+## https://docs.us-phoenix-1.oraclecloud.com/Content/Compute/Tasks/managingkeypairs.htm
