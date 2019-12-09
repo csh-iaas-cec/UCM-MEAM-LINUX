@@ -2,8 +2,12 @@
 
 const TenancyService = require('../services/tenancy.service');
 exports.getOnlyActiveTenancies = function(req,res,next){
+<<<<<<< HEAD
     // console.log("====controller request body====",req)
     console.log("Kshrie");
+=======
+    console.log("====controller request body====",req)
+>>>>>>> 2d1feee49d5385f200c210f2b77b7ee49b81f63c
     var tenancy = new TenancyService();
     tenancy.getOnlyActiveTenancies(req,function(err,data){
         if(err){
