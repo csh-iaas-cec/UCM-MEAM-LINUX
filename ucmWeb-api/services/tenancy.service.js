@@ -49,8 +49,6 @@ class TenancyService{
 
         connection.databaseConnection(null, function(err, data) {
             if (err) {
-                logger.error(JSON.stringify(err));
-                callback(boom.badImplementation(err));
                 return;
             } else {
                      let sql = `CALL get_active_inactive_tenancies(@tenancyName)`;
