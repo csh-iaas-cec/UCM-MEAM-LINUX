@@ -14,13 +14,6 @@ class InventoryService{
         let tenancies;
         connection.databaseConnection(null, function(err, data) {
             if (err) {
-<<<<<<< HEAD
-                // logger.error(JSON.stringify(err));
-                // callback(boom.badImplementation(err));
-=======
-                logger.error(JSON.stringify(err));
-                callback(boom.badImplementation(err));
->>>>>>> 2d1feee49d5385f200c210f2b77b7ee49b81f63c
                 return;
             } else {
                      let tenancyDetails = `CALL get_summary_count('${report_date}','${tenancy_id}',@compute,@vcn,@boot,@block,@subnet,@others,@bucket,@object,@size)`;
@@ -31,11 +24,7 @@ class InventoryService{
                          }
                          else {
                              tenancies = results[0];
-<<<<<<< HEAD
                              res(null, tenancies);
-=======
-                             res.json(tenancies);
->>>>>>> 2d1feee49d5385f200c210f2b77b7ee49b81f63c
                              console.log('<---------- Success : Successfully fetched summary count details by Id and report date and output is:  ---------->\n', tenancies);
 
                          }
@@ -48,10 +37,6 @@ class InventoryService{
         console.log('<----------API Database Get Compute resource details Called ---------->')
         //let connection = mysql.createConnection(config);
         var connection = new Connection();
-<<<<<<< HEAD
-        console.log(req)
-=======
->>>>>>> 2d1feee49d5385f200c210f2b77b7ee49b81f63c
         const name = req.query.name;
         const reportDate = req.query.reportdate;
         const tenancyName = req.query.tenancyname;
@@ -86,13 +71,6 @@ class InventoryService{
         console.log("<---------- Resource name :", name, " and sql statement is ", details, " ---------->");
         connection.databaseConnection(null, function(err, data) {
             if (err) {
-<<<<<<< HEAD
-                // logger.error(JSON.stringify(err));
-                // callback(boom.badImplementation(err));
-=======
-                logger.error(JSON.stringify(err));
-                callback(boom.badImplementation(err));
->>>>>>> 2d1feee49d5385f200c210f2b77b7ee49b81f63c
                 return;
             } else {
                     data.query(details, true, (error, results, fields) => {
@@ -101,11 +79,7 @@ class InventoryService{
                         }
                         else {
                             instancetable = results[0];
-<<<<<<< HEAD
                             res(null, instancetable);
-=======
-                            res.json(instancetable);
->>>>>>> 2d1feee49d5385f200c210f2b77b7ee49b81f63c
                             console.log('<---------- Success : Successfully computr resource deatils and output is:  ---------->\n', instancetable);
                         
                         }

@@ -44,11 +44,7 @@ module.exports = function(app){
     app.route('/api/getTableDetailsForCompute')
         .get(inventory.getTableDetailsForCompute);
 
-<<<<<<< HEAD
     app.route('/api/getSecurityListsFromPython')
-=======
-    app.route('/api/getSecurityListFromPython')
->>>>>>> 2d1feee49d5385f200c210f2b77b7ee49b81f63c
         .get(python.getSecurityListsFromPython);
 
     app.route('/api/runPythonForServiceAutomation')

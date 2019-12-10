@@ -19,11 +19,7 @@ routes(app);
 
 process.on('uncaughtException', function(err) {
    
-<<<<<<< HEAD
     console.log(err);
-=======
-    console.log("Node NOT Exiting...");
->>>>>>> 2d1feee49d5385f200c210f2b77b7ee49b81f63c
 });
 const server = app.listen(port, function() {
     console.log('Server listening on port ' + port)
