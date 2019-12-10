@@ -51,6 +51,9 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
+# Credential database file
+db.js
+
 # Yarn Integrity file
 .yarn-integrity
 

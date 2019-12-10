@@ -6,7 +6,7 @@ class UCM_Database{
         dbparams = {
             host: '192.168.1.5',
             user: 'uiportal',
-            password: 'cde3CDE#',
+            password: '(Ys3mB5GZvu',
             database: 'cloudautomation',
             port: '3306',
             multipleStatements: true
