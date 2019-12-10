@@ -12,7 +12,6 @@ class PythonService{
         //     console.log('finished');
         //     console.log(results);
     
-<<<<<<< HEAD
         if (req.query.tenancyname == 'orasenatdhubsred01') {
             
             fs.readFile("orasenatdhubsred01.json", "utf8", function (err, data) {
@@ -22,18 +21,6 @@ class PythonService{
                 }
                 console.log('<---------- Success: Successfully read security lists from the json file ---------->')
                 res(null, JSON.parse(data))
-=======
-        if (req.query.tenancyname = 'orasenatdhubsred01') {
-            fs.readFile("./securityscan/orasenatdhubsred01security.json", "utf8", function (err, data) {
-                if (err) {
-                    console.log('<---------- Error: Error reading the json file ----------> ')
-                    res.json(err)
-                }
-                //   console.log(data);
-                console.log('<---------- Success: Successfully read security lists from the json file ---------->')
-                res.json(JSON.parse(data))
-                console.log(data)
->>>>>>> 2d1feee49d5385f200c210f2b77b7ee49b81f63c
             })
         }
         else if (req.query.tenancyname = 'orasenatdhubsblue02') {
