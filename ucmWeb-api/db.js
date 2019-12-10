@@ -4,11 +4,11 @@ class UCM_Database{
     databaseConnection(arg, callback) {
         var dbparams = {};
         dbparams = {
-            host: '192.168.1.5',
+            host: '150.136.145.149',
             user: 'uiportal',
-            password: '(Ys3mB5GZvu',
+            password: 'cde3CDE#',
             database: 'cloudautomation',
-            port: '3306',
+            port: '1521',
             multipleStatements: true
         };
         return callback(null, mysql.createConnection(dbparams));
